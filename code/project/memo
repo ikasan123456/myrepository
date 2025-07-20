@@ -1,0 +1,17 @@
+npm init -yでなんかでてくるのでそこに  "type": "module",     
+をいれたらいい
+すべてのファイル適応
+
+
+PS C:\Users\ayato\OneDrive\cord> 
+>> function run {
+>>   node "C:\Users\ayato\OneDrive\cord\project\main.js"
+>> }
+PS C:\Users\ayato\OneDrive\cord> run
+main.jsから呼び出し
+lol
+PS C:\Users\ayato\OneDrive\cord> 
+これは、powershellの関数で、runと入力すると、nodeでmain.jsを実行する　ほかにも短縮があるかも
+
+
+

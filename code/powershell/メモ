@@ -1,0 +1,85 @@
+めも.txt
+
+|パイプで囲う　意味　、　空白は、感覚 パイプごとに空白を入れて
+# get.ps1の内容
+get |コマンド名 Get-Command に入る|   |  -Wildcard でワイルドカードを使う|
+
+
+
+#profilr.ps1    の内容
+prof で　nodepad $PROFILE
+
+#shitfunction.ps1 の内容
+例　呼び出し方
+ Test-Echo -Text "カスタムメッセージ"
+
+# runFunction.ps1 の内容
+
+    現在エラー！！！
+new-js 関数の機能まとめ（メモ用）
+
+基本機能
+new-js <名前> <ファイルパス>
+例：new-js main "C:\Users\ayato\OneDrive\cord\project\main.js"
+→ run_<名前> 関数を作成し、Node.jsで指定ファイルを実行できる
+デバッグ・管理機能
+new-js --v
+
+バージョン情報を表示
+new-js --list
+
+作成済み run_* 関数一覧を表示
+new-js --debug
+
+run_* 関数の詳細情報（名前・種類・ソース）を表示
+エラーチェック
+引数不足時
+❌ 引数が足りません: new-js <名前> <ファイルパス> と表示
+使い方例
+
+関数作成：new-js test "C:\\path\\to\\test.js"
+実行：run_test
+一覧表示：new-js --list
+詳細表示：new-js --debug
+バージョン確認：new-js --v
+ 
+# runpy.ps1 の内容
+基本機能
+new-py <名前> <ファイルパス>
+例：new-py test "C:\path\to\test.py"
+→ run-test という関数を作成し、Pythonで指定ファイルを実行できる
+デバッグ・管理機能
+new-py --v
+
+バージョン情報を表示
+new-py --list
+
+作成済み run_* 関数一覧を表示
+new-py --debug
+
+run_* 関数の詳細情報（名前・種類・ソース）を表示
+エラーチェック
+引数不足時
+❌ 引数が足りません: new-py <名前> <ファイルパス> と表示
+使い方例
+
+関数作成：new-py test "C:\\path\\to\\test.py"
+実行：run-test
+一覧表示：new-py --list
+詳細表示：new-py --debug
+バージョン確認：new-py --v
+s
+
+# useawayt.ps1 の内容
+node-await 関数の機能まとめ（メモ用）
+基本機能
+node-await
+→ Node.jsのREPLでawaitを使えるようにする
+デバッグ・管理機能
+
+; nodejs
+nodejs --v           # バージョン表示
+nodejs --await       # await有効REPL（現在のウィンドウ）
+nodejs --new         # 新しいウィンドウでREPL
+nodejs --new-await   # 新しいウィンドウでawait有効REPL
+nodejs               # 通常REPL（

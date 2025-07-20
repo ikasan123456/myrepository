@@ -1,0 +1,3 @@
+function prof {
+    notepad $PROFILE
+}
